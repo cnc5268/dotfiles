@@ -12,7 +12,7 @@ final_space = true
 
   [[blocks.segments]]
     template = '@{{ .UserName }} '
-    foreground = '#E36464'
+    foreground = '#62ED8B'
     type = 'session'
     style = 'plain'
 
