@@ -8,23 +8,23 @@ final_space = true
 [transient_prompt]
   template = '➜ '
   background = 'transparent'
-  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
+  foreground_templates = ['{{if gt .Code 0}}#A8334C{{end}}', '{{if eq .Code 0}}#CFC1BA{{end}}']
 
   [[blocks.segments]]
     template = '@{{ .UserName }} '
-    foreground = '#62ED8B'
+    foreground = '#A8334C'
     type = 'session'
     style = 'plain'
 
   [[blocks.segments]]
     template = '➜'
-    foreground = '#62ED8B'
+    foreground = '#CFC1BA'
     type = 'text'
     style = 'plain'
 
   [[blocks.segments]]
     template = ' {{ .Path }}'
-    foreground = '#56B6C2'
+    foreground = '#CFC1BA'
     type = 'path'
     style = 'plain'
 
@@ -32,8 +32,8 @@ final_space = true
       style = 'folder'
 
   [[blocks.segments]]
-    template = ' <#DDB15F>git(</>{{ .HEAD }}<#DDB15F>)</>'
-    foreground = '#D4AAFC'
+    template = ' <#A8334C>git(</>{{ .HEAD }}<#88507D>)</>'
+    foreground = '#CFC1BA'
     type = 'git'
     style = 'plain'
 
@@ -42,6 +42,6 @@ final_space = true
 
   [[blocks.segments]]
     template = ' '
-    foreground = '#DCB977'
+    foreground = '#94253E'
     type = 'status'
     style = 'plain'
